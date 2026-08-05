@@ -40,8 +40,6 @@ Traditional "blanket spraying" wastes chemicals, degrades soil, and increases he
 
 ![System Block Diagram](images/block_diagram.png)
 
-Place the block diagram image at `images/block_diagram.png` in the repository so it renders here on GitHub.
-
 ## Dataset — Sample Images
 
 A subset of the custom tomato-leaf dataset is shown below for reference: raw field captures alongside their annotated (bounding-box labelled) counterparts used to train the YOLOv8 model.
@@ -57,8 +55,6 @@ A subset of the custom tomato-leaf dataset is shown below for reference: raw fie
 | | | | |
 |---|---|---|---|
 | ![Annotated 1](images/dataset/annotated/sample_1.jpg) | ![Annotated 2](images/dataset/annotated/sample_2.jpg) | ![Annotated 3](images/dataset/annotated/sample_3.jpg) | ![Annotated 4](images/dataset/annotated/sample_4.jpg) |
-
-> Place 4 raw images in `images/dataset/unannotated/` and their labelled counterparts in `images/dataset/annotated/`, named `sample_1.jpg` – `sample_4.jpg` in each folder, so they render above.
 
 ## Results (Phase-1)
 
