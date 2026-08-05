@@ -42,19 +42,35 @@ Traditional "blanket spraying" wastes chemicals, degrades soil, and increases he
 
 Place the block diagram image at `images/block_diagram.png` in the repository so it renders here on GitHub.
 
+## Dataset — Sample Images
 
+A subset of the custom tomato-leaf dataset is shown below for reference: raw field captures alongside their annotated (bounding-box labelled) counterparts used to train the YOLOv8 model.
 
-## Model Weights & Dataset
+### Unannotated (Raw) Samples
 
-Trained weights and the annotated tomato-leaf dataset aren't included directly (large files). Either:
-- Use [Git LFS](https://git-lfs.github.com/) to track `*.pt` / `*.tflite` files, or
-- Host them externally (Google Drive / Kaggle / Roboflow) and link here.
+| | | | |
+|---|---|---|---|
+| ![Raw 1](images/dataset/unannotated/sample_1.jpg) | ![Raw 2](images/dataset/unannotated/sample_2.jpg) | ![Raw 3](images/dataset/unannotated/sample_3.jpg) | ![Raw 4](images/dataset/unannotated/sample_4.jpg) |
+
+### Annotated Samples
+
+| | | | |
+|---|---|---|---|
+| ![Annotated 1](images/dataset/annotated/sample_1.jpg) | ![Annotated 2](images/dataset/annotated/sample_2.jpg) | ![Annotated 3](images/dataset/annotated/sample_3.jpg) | ![Annotated 4](images/dataset/annotated/sample_4.jpg) |
+
+> Place 4 raw images in `images/dataset/unannotated/` and their labelled counterparts in `images/dataset/annotated/`, named `sample_1.jpg` – `sample_4.jpg` in each folder, so they render above.
 
 ## Results (Phase-1)
 
 - Trained over 50 epochs; box loss and classification loss converge smoothly with no overfitting.
 - Normalized confusion matrix: 88% healthy, 89% unhealthy, 91% riped tomato, 87% unriped tomato, 95% background true-negative rate.
 - Real-time inference on the Raspberry Pi 4B with confidence scores ranging ~37–82% depending on occlusion/lighting.
+
+### Training & Validation Loss Curves
+
+![Training and Validation Loss Curves](images/results/training_loss_curves.png)
+
+*Box loss and classification loss for both training and validation sets over 50 epochs, showing steady convergence with no signs of overfitting.*
 
 ## Future Scope
 
